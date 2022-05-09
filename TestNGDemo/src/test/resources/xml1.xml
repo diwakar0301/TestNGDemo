@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite1">
+	<parameter name="sl" value="a"></parameter>
+	<test thread-count="5" name="Test1">
+		<parameter name="tl" value="b"></parameter>
+		<classes>
+			<class name="com.example.demo.FirstTest">
+				<methods>
+					<exclude name="bTest" />
+				</methods>
+			</class>
+			<class name="com.example.demo.TestNgDemoApplicationTests" />
+			<class name="com.example.demo.SecondTest" />
+
+
+		</classes>
+	</test>
+	<test thread-count="5" name="Test2">
+		<classes>
+
+			<class name="com.example.demo2.FourthTest" />
+			<class name="com.example.demo2.ThirdTest">
+				<methods>
+					<include name="kTest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 

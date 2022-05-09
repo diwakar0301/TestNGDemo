@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite5">
+
+	<test thread-count="5" name="Test8">
+		<groups>
+
+			<dependencies>
+				<group depends-on="smokes" name="san"></group>
+				<group depends-on="smokes" name="sun"></group>
+
+
+			</dependencies>
+
+			<!-- <run> <include name="smokes"></include> <include name="sun"></include> 
+				<include name="san"></include> </run> -->
+		</groups>
+
+		<classes>
+
+
+			<class
+				name="com.example.demotestdependency.TestGroupDependencyTest" />
+		</classes>
+
+	</test>
+</suite> 

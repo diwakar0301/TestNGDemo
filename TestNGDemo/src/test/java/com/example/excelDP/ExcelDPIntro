@@ -1,0 +1,23 @@
+Excel file extension -> xls(older) HSSF, xlsx(newer) XSSF
+
+Libraries available for reading data from Excel file -> Apache POI, JXL
+
+Apache POI supports both xls, xlsx
+
+JXL supports only xls 
+
+JXL is faster than Apache POI
+
+.xls -> poi(maven artifact)
+
+.xlsx -> poi+poi-ooxml
+
+.doc,.ppt -> poi+poi-scratchpadpoi
+
+.docx,.pptx -> poi+poi-ooxml
+
+Binary Distribution -> already compiled
+
+Source Distribution -> need to compile
+
+https://poi.apache.org/components/index.html  for maven dependencies component map
