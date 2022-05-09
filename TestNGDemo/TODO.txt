@@ -1,0 +1,25 @@
+			TESTNG ---> test level will have more control for classes and methods but suite level won't have such powerful controls over classes & methods
+				    
+
+1.timeout
+2.data provider ---> parallel & data-provider-thread-count
+3.tests ---> parallel in suite level with thread count
+4.classes ---> parallel in suite level with thread count
+5.classes ---> parallel in test level with thread count
+6.methods ---> parallel in suite level with thread count
+7.methods ---> parallel in test level with thread count
+8.invocation count(execute further invocation even though if any exception occurs at first invocation 
+but normal loops won't execute frther invocation if any exception occurs at first invocation
+), 
+invocation timeout, 
+threadpoolsize
+
+9. before java version 8 -> interfaces won't have implemented method that is all are abstract 
+10. testng version 7 and above uses java 8 version
+11.suite level listeners
+12.test level listeners
+13. difference between listeners and annotation like(@AfterMethod,.....).
+	listeners will listen to the each and every events and track the status but annotation don't have such feature.
+extending TestListenerAdapter Class is equal to implementing all listeners interface
+14. @Factory
+
